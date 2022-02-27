@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\styleform.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona</title>
+    <link rel="icon" href="img\32.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <nav class="nav">
+               <div class="nav_block">
+               <a class="nav_link" href="index.html">главная</a>
+               <a class="nav_link" href="catalog.html">фото и видео</a>
+               </div>
+               <div class="nav_block">
+               <a class="nav_link" href="form.html">форма отзыва</a>
+               <a class="nav_link" href="#">html academy</a>
+                </div>
+                <img class="desLogo" src="img/deslogo.png">
+                <img class="tabLogo" src="img/tablogo.png">
+                <img class="mobLogo" src="img/moblogo.png">
+                <div class="header_burger">
+                   <span></span>
+                </div>
+               <div class="burger_nav active">
+                    <a class="burger_nav_link" href="index.html">главная</a>
+                    <a class="burger_nav_link" href="catalog.html">фото и видео</a>
+                    <a class="burger_nav_link" href="form.html">форма отзыва</a>
+                    <a class="burger_nav_link" href="#">html academy</a>
+               </div>
+           </nav>
+        </div><!--container-->
+    </header>
+    <main>
+        <div class="container">
+            <div class="intro">
+                <img class="intro_img" src="img\intro\Group (2).png">
+            </div><!--intro-->
+            <div class="title">
+                <p class="bold">оставьте свой отзыв</p>
+                <p>помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </div>
+            <div class="naming">
+                <div class="impression">
+                    <p>ваше общее впечатление:</p>
+                    <div class="radio">
+                        <div class="radio_block">
+                      <input  type="radio" id="impression_choice1"
+                      name="impression" value="Скорее положительное">
+                      <label for="impression_choice1">Скорее положительное</label>
+                    </div>
+                      <div class="radio_block">
+                      <input  type="radio" id="impression_choice2"
+                      name="impression" value="Скорее отрицательное">
+                      <label for="impression_choice2">Скорее отрицательное</label>
+                    </div>
+                      <div class="radio_block">
+                      <input  type="radio" id="impression_choice3"
+                      name="impression" value="Затрудняюсь ответить">
+                      <label for="impression_choice3">Затрудняюсь ответить</label>
+                    </div>
+                    </div><!--class="radio"-->
+                </div>
+                <div class="name">
+                    <p>представьтесь:</p>
+                    <div class="name_form">
+                         <label for="name">Имя*:</label>
+                         <input id="name"><br>
+                       </div>
+                         <div class="name_form">
+                         <label for="famylyname">фамилия*:</label>
+                         <input id="famylyname"><br>
+                       </div>
+                         <div class="name_form">
+                         <label for="secondname">отчество:</label>
+                         <input id="secondname"><br>
+                       </div>
+                </div>
+            </div><!--class="naming"-->
+            <div class="contact_info">
+                <div class="contact_info_lable">
+                    <p>Контактная информация:</p>
+                </div><!--class="contact_info_lable"-->
+                <div class="contact">
+                <div class="contact_info_block">
+                   <label for="phone">Контактный телефон*:</label>
+                   <input id="phone">
+                 </div>
+                 <div class="contact_info_block">
+                   <label for="mail">Электронная почта*:</label>
+                   <input id="mail">
+                 </div>
+                </div>
+               </div>
+               <div class="contact_info_lable">
+                   <p>посещенные достопримечательности:</p>
+               </div>
+               <div class="checkbox">
+                   <div class="checkbox_block">
+                       <input  type="checkbox" id="choice1"
+                       name="impression" value="a1">
+                       <label for="impression_choice1">Мост Дьявола</label><br>
+                       <input  type="checkbox" id="choice2"
+                       name="impression" value="a2">
+                       <label for="impression_choice1">Гора-Колокол</label>
+                   </div>
+                   <div class="checkbox_block">
+                       <input  type="checkbox" id="choice3"
+                       name="impression" value="a3">
+                       <label for="impression_choice1">Слайд-парк</label><br>
+                       <input  type="checkbox" id="choice4"
+                       name="impression" value="a4">
+                       <label for="impression_choice1">Красные скалы</label>
+                   </div>
+               </div>
+               <div class="contact_info_lable">
+                   <p>Опишите свои эмоции:</p>
+               </div>
+               <div class="fitback">
+                   <textarea id="4" rows="5">Опишите подробно все свои восторги</textarea>
+               </div>
+               <div class="push">
+                   <a class="btn btn--main" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+                   <p>* — обязательные поля</p>
+               </div>
+        </div><!--container-->
+    </main>
+    <footer>
+       <div class="container">
+           <div class="footer">
+               <div class="footer_text">
+                   <p>#visitsedona</p>
+               </div>
+               <div class="footer_icon">
+                   <a class="icon" href="#"><img class="footer_icon--icon" src="img\twitter.svg"></a>
+                   <a class="icon" href="#"><img class="footer_icon--icon" src="img\facebook.svg"></a>
+                   <a class="icon" href="#"><img class="footer_icon--icon" src="img\youtube.svg"></a>
+               </div>
+               <div class="footer_academy">
+                   <p>Разработано</p>
+                   <img class="academy_icon" src="img\htmlacademy.svg">
+               </div>
+           </div><!--class="footer"-->
+       </div><!--class="container"-->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
